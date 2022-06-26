@@ -1,0 +1,12 @@
+default: &default
+  adapter: postgresql
+  host: 127.0.0.1
+  pool: 5
+  username: postgres
+  password: 047586
+  reconnect: false
+  encoding: utf8
+
+development:
+  <<: *default
+  database: books_react
